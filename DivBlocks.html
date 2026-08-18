@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four Div Blocks</title>
+    <h1><center>Four Div Blocks</center></h1>
+    <p>This is our Four Div Blocks</p>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="table">
+            <div class="row">
+
+                <!-- Block 1-->
+                 <div class="block">
+
+                    <h2>Block 1</h2>
+
+                    <p>This is First Block of the table</p>
+
+                    <button>Read More</button>
+                 </div>
+
+                 <!-- Block 2-->
+                 <div class="block">
+
+                    <h2>Block 2</h2>
+
+                    <p>This is Second Block of the table</p>
+
+                    <button>Read More</button>
+                 </div>
+
+                 <!-- Block 3-->
+                 <div class="block">
+
+                    <h2>Block 3</h2>
+
+                    <p>This is Third Block of the table</p>
+
+                    <button>Read More</button>
+                 </div>
+
+                 <!-- Block 4-->
+                 <div class="block">
+
+                    <h2>Block 4</h2>
+
+                    <p>This is Four Block of the table</p>
+
+                    <button>Read More</button>
+                 </div>
+
+            </div>
+        </div>
+    </div>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f4f6f8;
+        padding: 50px;
+    }
+
+    .container {
+        max-width: 1100px;
+        margin: auto;
+        margin-bottom: auto;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #222;
+    } 
+
+    p {
+        text-align: center;
+        align-items: center;
+        color: #222;
+        padding: 20px;
+    }
+
+    .table {
+        height: 100%;
+        width: 100%;
+        background: white;
+        border: 1px solid #f1f1f1;
+    }
+
+    .row {
+        display: flex;
+        width: 100%;
+    }
+
+    .block {
+        width: 25%;
+        min-height: 200px;
+        padding: 25px;
+        border-right: 1px solid #ddd;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .block:last-child {
+        border-right: none;
+    }
+
+    .block h2 {
+        margin-bottom: 12px;
+        color: #ff5722
+    }
+
+    .block p {
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 20px;
+
+        }
+
+    .block button {
+        padding: 10px 20px;
+        border: #666;
+        background: #ff5722;
+        color: #ddd;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .block button:hover {
+        background: #e64a19;
+    }
+
+    @media (max-width: 768px) {
+        body {
+            padding: 20px;
+        }
+
+        .row {
+            flex-wrap: wrap;
+        }
+
+        .block {
+            width: 50%;
+            border-bottom: 1px solid #ddd;
+        }
+    }
+
+
+    </style>
+    
+</body>
+</html>
